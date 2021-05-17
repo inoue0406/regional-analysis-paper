@@ -1,9 +1,17 @@
 # regional-analysis-paper
 This is a repository for the paper "Learning from Precipitation Events in the Wider Domain to Improve the Performance of a Deep Learning-based Precipitation Nowcasting Model"
 
-## Training and evaluation
+# System Requirements
 
-### Trajectory GRU models
+- It is recommended to use Linux.
+- Python 3.7, CUDA toolkit 9.0 or newer, PyTorch 1.4 or newer.
+- It took around 12 hours to train a "local" model for an area with GeForce RTX 2080 Ti.
+- For the installation of the Rainymotion model, please refer to the author's page.
+  https://github.com/hydrogo/rainymotion
+
+# Training and evaluation
+
+## Trajectory GRU models
 
 Learning with local data
 
@@ -31,7 +39,7 @@ cd run
 ./run_20210426_trajGRU_size200_wmse_alljapan_trans.bash
 ```
 
-### Other models
+## Conventional models
 
 Evaluate with the persistence model.
 
